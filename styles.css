@@ -1,0 +1,60 @@
+body {
+    background-color: #1b1b32;
+    color: #f5f6f7;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.password {
+    display: flex;
+    --height: 36px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#password-input {
+    flex-grow: 1;
+    padding: 0px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-right: none;
+    outline: none;
+}
+
+#password-input:hover {
+    background: #eee;
+}
+
+#copy-button, #refresh-button {
+    flex-shrink: 0;
+    width: var(--height);
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+    color: #333;
+    outline: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#copy-button:hover, #refresh-button:hover {
+    background: #ccc;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.option-checkboxes {
+    display: inline-block;
+    margin-right: 5px;
+}
