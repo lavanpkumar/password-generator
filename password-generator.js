@@ -109,6 +109,17 @@ const renderPassword = function () {
     renderPassword();
 }; */
 
+document.querySelectorAll('.option-checkboxes').forEach(checkbox => { 
+    checkbox.addEventListener('change', function(event) { 
+        const checkboxes = document.querySelectorAll('.option-checkboxes') 
+        const checkedCheckboxes = Array.from(checkboxes).filter(cb => cb.checked) 
+        if (checkedCheckboxes.length === 0) { 
+            event.target.checked = true 
+        } 
+        renderPassword()
+    })
+})
+
 
 
 document.getElementById('copy-button').addEventListener('click', function () {
